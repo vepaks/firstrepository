@@ -35,5 +35,4 @@ let arr  = true,
      drr = false;
 console.log (arr && !drr);
 
-alert("Hello SoftUni");
-
+alert ("Hello SoftUni"); //проба
