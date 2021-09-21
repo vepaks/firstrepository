@@ -1,40 +1,46 @@
-"use strict";
+/* Задание на урок:
 
-let age = 23;
-let number = 5;
-const LeftBorderWight = 1;
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
 
-console.log(number);
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
 
-let alex = "Alex";
-let max = "Maxim";
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
 
-console.log(alex, max);
+Проверить, чтобы все работало без ошибок в консоли */
 
-const Poll = 21;
+'use strict';
 
-
-
-let obj = {
-    age: 26,
-    name: "Alex",
-    singel: false,
-
-      
-};
-
-console.log (obj.singel, obj.age);
-
-//Конструкция на линкове
-console.log (`http://barierata.com/${age}/${"alex"}/${"max"}` );
+let numberOfFilms = +prompt ("Колко филма изгледахте?", "" );
 
 
-console.log (5 * age); 
+const personalMovieDB = {
+        count: numberOfFilms,
+        movies: {},
+        actors: {},
+        genres: [],
+        privat: false
 
-let arr  = true,
-     drr = false;
-console.log (arr && !drr);
+    };
 
-alert ("Hello SoftUni"); //проба
+    const question1 = prompt ("Последен изгледан филм?", "" ),
+          question2 = prompt ("Каква оценка ще му поставите?", ""),
+          question3 = prompt ("Последен изгледан филм?", "" ),
+          question4 = prompt ("Каква оценка ще му поставите?", "");
 
-alert ("alert"); 
+          personalMovieDB.movies [question1] = question2;
+          personalMovieDB.movies [question3] = question4;
+
+console.log (personalMovieDB);
