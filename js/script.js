@@ -35,12 +35,12 @@ const personalMovieDB = {
 
 };
 
-let a = prompt ("Един от последните изгледани филми?" );
+let question1 = prompt ("Един от последните изгледани филми?" );
 let b = +prompt ("Каква оценка му поставяте?"); 
 let c = prompt ("Един от последните изгледани филми?");
 let d = +prompt ('Каква оценка му поставяте?');
 
-personalMovieDB.movies [a] = b;
+personalMovieDB.movies [question1] = b;
 personalMovieDB.movies [c] = d;
 
 console.log (personalMovieDB);
