@@ -1,10 +1,20 @@
 "use strict";
 
-const num = 50;
-if (num < 50) {
-    console.log ('Error');
-    } else if (num > 100) {
-    console.log ('too mumutch');
-    } else {
-        console.log ('OK');
-    }
+
+let answerDB = {
+        age: {},
+        name: {},
+        single: {}
+
+    };
+
+let question1 = prompt ('Как се казвате?');
+let question2 = prompt ('Как се казвате?');
+
+answerDB.name [question1] = question2;
+
+if (answerDB.name === 'Alex') {
+        console.log ('Ok!');
+} else {
+        console.log ('Not OK!');
+}
