@@ -83,8 +83,6 @@ function whriteYourGenderes () {
         } 
 
 }
-
-
 whriteYourGenderes ();
- 
+
 
