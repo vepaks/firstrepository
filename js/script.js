@@ -1,13 +1,20 @@
 'use strict';
 
-function first (lang, callback) {
-    console.log ( `${lang}` );
-    callback ();
+const threes = {
+    salim: 10,
+    hasan: 20,
+    ismail: 20,
+    vedat: 30,
+    Test: function () {
+        console.log ('Test');
+    }
+}; 
 
+console.log (Object.keys(threes).length );
+
+for (let key in threes ) {
+    console.log (key);
 }
 
-first (1, function (){
-    console.log (2);
-    } ); 
-
-
+const { vedat, salim} = threes;
+console.log ( vedat, salim ); 
