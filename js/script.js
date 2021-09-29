@@ -18,3 +18,6 @@ for (let key in threes ) {
 
 const { vedat, salim} = threes;
 console.log ( vedat, salim ); 
+
+
+console.log (Object.keys (threes));
