@@ -1,38 +1,20 @@
 'use strict';
 
-const threes = {
-    salim: 10,
-    hasan: 20,
-    ismail: 20,
-    vedat: 30,
-    Test: function () {
-        console.log ('Test');
-    }
-}; 
+let answers = [],
+    quetions = [
+        'Как се казвате?',
+        'На колко години сте?',
+        'Каква е вашата фамиялия?'
+    ];
 
-console.log (Object.keys(threes).length );
+// for (let i = 0; i < quetions.length; i++) {
+//     answers[i] = prompt (quetions[i], '');
+// }
 
-for (let key in threes ) {
-    console.log (key);
+let i = 0;
+while (i < quetions.length ) {
+answers[i] = prompt (quetions[i], ' ');
+i++;
 }
 
-const { vedat, salim} = threes;
-console.log ( vedat, salim ); 
-
-
-console.log (Object.keys (threes));
-
-
-function Hello () {
-    console.log ("1");
-    console.log ("2");
-    console.log ("3");
-    console.log ("4");
-    console.log ("5");
-    console.log ("6");
-    console.log ("7");
-    console.log ("8");
-    console.log ("9");
-    console.log ("10");
-
-}
+console.log (quetions);
