@@ -7,14 +7,20 @@ let answers = [],
         'Каква е вашата фамиялия?'
     ];
 
-// for (let i = 0; i < quetions.length; i++) {
+
+    // for (let i = 0; i < quetions.length; i++) {
 //     answers[i] = prompt (quetions[i], '');
 // }
 
-let i = 0;
-while (i < quetions.length ) {
-answers[i] = prompt (quetions[i], ' ');
-i++;
-}
+// let i = 0;
+// while (i < quetions.length ) {
+// answers[i] = prompt (quetions[i], ' ');
+// i++;
+// }
 
-console.log (quetions);
+let  i = 0;
+do {
+    answers[i] = prompt (quetions[i], '');
+    i++;
+}
+while (i < quetions.length);
