@@ -1,45 +1,37 @@
 'use strict';
 
-let answers = [],
-    quetions = [
-        'Как се казвате?',
-        'На колко години сте?',
-        'Каква е вашата фамиялия?'
-    ];
+function myFirstApp(name, age) {
+    alert(`Здравейте, аз се казвам ${name} и това е моята първа  програма`);
 
+    function showMySkils() {
+        let skils = ["HTML", "CSS", "JS", ];
+        // аз знам html
 
-    // for (let i = 0; i < quetions.length; i++) {
-//     answers[i] = prompt (quetions[i], '');
-// }
+        console.log(`Аз знам ${skils[1]}`);
 
-// let i = 0;
-// while (i < quetions.length ) {
-// answers[i] = prompt (quetions[i], ' ');
-// i++;
-// }
+    }
+    showMySkils();
 
-<<<<<<< HEAD
-let  i = 0;
-do {
-    answers[i] = prompt (quetions[i], '');
-    i++;
+    function checkAge() {
+        if (age > 18) {
+            console.log (`${name} имаш страхотни шансове да станеш FrondEndDev!`);  
+        } else {
+            console.log (`${name}, прекрасно е, че мислиш за своето бъдеще!`);
+        }
+
+        // age > 18 
+        // имаш страховни условияя да станеш FrontEndDev
+
+        // аге < 18 
+        // Това е прекрасно, че мислиш за бъдещето!
+    }
+    checkAge();
+
+    function calcPow(num) {
+        console.log ((num*num));
+        // Квадрат на число
+    }
+    calcPow (44);
 }
-while (i < quetions.length);
-=======
-console.log (Object.keys (threes));
 
-
-function Hello () {
-    console.log ("1");
-    console.log ("2");
-    console.log ("3");
-    console.log ("4");
-    console.log ("5");
-    console.log ("6");
-    console.log ("7");
-    console.log ("8");
-    console.log ("9");
-    console.log ("10");
-
-}
->>>>>>> main
+myFirstApp('Алексадър', '36');
